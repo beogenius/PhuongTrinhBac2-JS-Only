@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai-pt-b2-bang-JS</title>
+</head>
+<body>
+<script>
+    function ptb2()
+    {
+        alert("Giai pt bac 2 ax2 + bx+ c = 0 <br>");
+        alert("Moi ban nhap vao he so a,b,c<br>");
+        var a=prompt("Nhap vao a=");
+        var b=prompt("Nhap vao b=");
+        var c=prompt("Nhap vao c=");
+        var delta=(b*b-4*a*c);
+        if (delta<0)
+        {
+            alert('Pt vo nghiem');
+        }
+        else if (delta==0){
+            alert("Phuong trinh co nghiem kep = "+ (-b)/2*a);
+        }
+        else
+        {
+            var x1= (-b+Math.sqrt(delta))/2*a;
+            var x2= (-b-Math.sqrt(delta))/2*a;
+            alert("Phuong trinh co 2 nghiem x1=" + x1 + " va x2 =" + x2);
+        }
+    }
+</script>
+<script>
+    ptb2();
+</script>
+</body>
+</html>
